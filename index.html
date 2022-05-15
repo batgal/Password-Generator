@@ -1,23 +1,31 @@
 <html>
   <head>
-    <script src="./assets/script.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ye Olde Password Generator</title>
   </head>
   <body>
     <header>
-      <h1 class="text-center" style="margin-top: 20px">Password Generator</h1>
+      <h1 class="text-center" style="margin-top: 20px">
+        Ye Olde Password Generator
+      </h1>
     </header>
     <div
       class="card shadow-sm p-3 mb-5 bg-white rounded"
       style="max-width: 60%; margin: 40px auto"
     >
       <div class="card-body">
-        <h2 class="card-title">Generate a Password</h2>
+        <h2 class="card-title">
+          Generate an <span font-size: xx-small;></span>*almost* Unbeatable
+          Password!
+        </h2>
         <textarea
           style="
             width: 100%;
             text-align: center;
             resize: none;
-            border: dashed 2px lightgrey;
+            border: double 3px rgb(163, 120, 201);
             margin: 30px auto;
             padding: 10px auto;
             min-height: 100px;
@@ -36,26 +44,14 @@
             border-radius: 40px;
             padding-right: 30px;
             padding-left: 30px;
+            background-color: rgb(196, 117, 187);
+            color: white;
           "
         >
           Generate Password
         </button>
-        <button
-          type="button"
-          class="btn btn-light"
-          id="clipboard"
-          style="
-            float: right;
-            border-radius: 40px;
-            padding-right: 30px;
-            padding-left: 30px;
-            background-color: silver;
-            color: white;
-          "
-        >
-          Copy to clipboard
-        </button>
       </div>
     </div>
+    <script src="./assets/script.js"></script>
   </body>
 </html>

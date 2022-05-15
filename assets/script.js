@@ -1,3 +1,4 @@
+//Criteria Prompts
 window.addEventListener("load", function () {
   var passwordLength = prompt(
     "What length of characters do you want your password to be?"
