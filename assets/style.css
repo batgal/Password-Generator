@@ -80,6 +80,7 @@ header {
     0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
+  align-content: center;
   font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
@@ -112,7 +113,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px double #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;

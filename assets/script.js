@@ -1,7 +1,7 @@
 //Criteria Prompts
 window.addEventListener("load", function () {
   var passwordLength = prompt(
-    "What length of characters do you want your password to be?"
+    "What length of characters do you want your password to be? (please choose a value between 8 and 128 for maximum security)"
   );
 
   while (passwordLength < 8 || passwordLength > 128) {
@@ -35,22 +35,6 @@ window.addEventListener("load", function () {
       symbols,
       passwordLength
     );
-  });
-
-  document.getElementById("clipboard").addEventListener("click", () => {
-    const textarea = document.createElement("textarea");
-    const password = resultEl.value;
-
-    if (!password) {
-      return;
-    }
-
-    textarea.value = password;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    textarea.remove();
-    alert("Password copied to clipboard");
   });
 });
 
